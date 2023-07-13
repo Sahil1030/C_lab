@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        body{
+          background-color: #282A35;
+        overflow: hidden;
+      }
+          .nav1{
+          position: sticky;
+          top: 0%;
+          background-color: rgb(255, 255, 255);
+        }
+        .center_align{
+            text-align: center;
+          }
+          .scrollbar{
+            width: 280px;
+            height: 683px;
+            overflow-y:scroll;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+			color: #282A35;
+			background-color: rgb(255, 255, 255);
+      position: sticky;
+      top: 0%;
+      left: 0%;
+          }
+          .btn1{background-color: #FFC0C7;
+          border-radius: 50px;
+          border: #FFC0C7;
+          height: 50px;
+          width: 400px;
+          font-weight: 500;
+          font-size: 30px;
+          color: #1a1919;
+          }
+          .nbtn{
+           color: #282A35;
+           border: 2px solid #282A35;
+           font-weight: 200;
+          }
+		  #scTxt{
+			color: #282A35;
+		  }
+		  #GCH{
+			text-align: center;
+			font-weight:600;
+			font-size: 30px;
+			text-align:center;
+			color: #FFFFFF;
+		  }
+		  #JTD{
+			text-align: center;font-weight:600;font-size: 30px; text-align:center;color: #FFFFFF;
+		  }
+		  #tbl{
+			width: 300px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+      height: 10px;
+      overflow-y: scroll;
+		  }
+		  #codearea{
+			margin-left: auto;margin-right: auto;height: 550px;width: 550px; border-radius: 10px;align-items: center;
+		  }
+		  #cpy{
+			color: #FFFFFF;
+			background-color: #282A35;
+			border: 2px solid #ffffff;
+			border-radius: 23px;
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 20px;
+      font-size: 10px;
+      width: 50px;
+      padding-bottom:20px;
+		  }
+          #list1{
+            color: #282A35;
+            height: 35px;
+            width: 250px;
+            text-align:left;
+            padding-bottom:28px;
+            font-size: 18.5px;
+          }
+          body.dark-mode{
+            background-color: rgb(232, 232, 232);
+            color: #282A35;
+          }
+          body.dark-mode #list1{
+            color: #ffffff;
+            height: 35px;width: 
+            250px;text-align:
+            left;padding-bottom:
+            28px;font-size: 18.5px;
+          }
+          body.dark-mode #navbar{
+          position: sticky;
+          top: 0%;
+          background-color: #282A35;
+          color: #ffffff;
+        }
+        body.dark-mode #ulNavText{
+          background-color: #282A35;
+         color: #ffffff;
+        }
+		body.dark-mode #tb-text{
+			color: #ffffff;
+		}
+		body.dark-mode #tbl{
+			width: 300px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+      height: 10px;
+      overflow-y: scroll;
+			background-color: #282A35;
+		}
+		body.dark-mode #tbl-th{
+		background-color: #282A35;
+		color: #ffffff;
+		  }
+		  body.dark-mode  #GCH{
+			text-align: center;
+			font-weight:600;
+			font-size: 30px;
+			text-align:center;
+			color: #282A35;
+		  }
+		  body.dark-mode #codearea{
+			margin-left: auto;margin-right: auto;height: 550px;width: 550px; border-radius: 10px;align-items: center;
+			color: #ffffff;
+			background-color: #282A35;
+		  }
+		  body.dark-mode #JTD{
+			text-align: center;font-weight:600;font-size: 30px; text-align:center;color: #000000;
+		  }
+		  body.dark-mode .scrollbar{
+            width: 280px;
+            height: 683px;
+            overflow-y:scroll;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+			color: #ffffff;
+			background-color: #282A35;
+          }
+		  body.dark-mode #scTxt{
+			color: #ffffff;
+		  }
+		  body.dark-mode  #cpy{
+			color: #282A35;
+			background-color: #d8d8d8;
+			border: 2px solid #282A35;
+			border-radius: 23px;
+		  }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg  nav1" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="rounded float-star" src="Type of Duck Skins\logo.png" class="img-fluid" alt="..." width="35px" height="35px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ulNavText">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="index_Home.html" id="ulNavText">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="ulNavText">
+                  General
+                </a>
+                <ul class="dropdown-menu" id="ulNavText">
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Action</a></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Another action</a></li>
+                  <li><hr class="dropdown-divider" id="ulNavText"></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" area-expanded="false" id="ulNavText">
+                  Tutorials
+                </a>
+                <ul class="dropdown-menu" id="ulNavText">
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Action</a></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Another action</a></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="ulNavText">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="ulNavText">
+                  Excercises
+                </a>
+                <ul class="dropdown-menu" id="ulNavText">
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Action</a></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Another action</a></li>
+                  <li><a class="dropdown-item" href="#" id="ulNavText">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item",style="text-align:right">
+                <!-- <button class="btn btn-outline-dark"> -->
+                <a class="btn" href="blackbox2.html" id="ulNavText">Code Generator</a>
+                <a class="btn" href="#" id="ulNavText">Learn C language</a>
+                <!-- </button> -->
+              </li>
+              <li class="nav-item" id="ulNavText">
+                <button class="btn" onclick="toggleDarkMode()" id="ulNavText">Dark</button>
+            </li>
+        </ul><div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="forms.html" class="btn" tabindex="-1" role="button" id="ulNavText" >Sign In</a>
+        </div><p>&nbsp;&nbsp;</p>
+        <form class="d-flex" role="search" id="ulNavText">
+            
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"><p>&nbsp;&nbsp;</p>
+            <button class="btn" type="submit" id="ulNavText">Search</button>
+            
+        </form>
+    </div>
+</div>
+</nav>
+        <div class="row">
+    <div class="col-2 position-absolute">
+      <div class="flex-shrink-0 p-3  scrollbar" style="width: 280px;">
+        <a href="index_Home.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi me-2" width="30" height="24"><use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"></use></svg>
+          <span class="fs-5 fw-semibold" id="scTxt">Go to Home</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+         <li class="mb-1" id="scTxt">
+        <button class="btn btn-toggle align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false" id="scTxt">
+        <div style="font-weight: 400;font-size: 25px;" class="dropdown-toggle">C Basic</div>
+        </button>
+        <div class="collapse show" id="home-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li id="list1"><a href="#" class="btn rounded" id="list1" id="scTxt">C Intro</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">Mingw Setup</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">Structure and Syntax of C</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">Print Statement</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">New Line Character</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">Comments</a></li>
+          <li id="list1"><a href="#" class="btn rounded" id="list1">Variables</a></li>
+          <li class="mb-1">
+            <a style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#Datatypes-collapse" aria-expanded="false" id="scTxt">
+              Data-types 
+            </a>
+            <div class="collapse show" id="Datatypes-collapse" >
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Integer</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Character</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Double</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Float</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Boolean</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Constants</a></li>
+          <li class="mb-1">
+            <a style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#Operators-collapse" aria-expanded="false">
+              Operators
+            </a>
+            <div class="collapse show" id="Operators-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Assignment operators</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Comparison operators</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Logical operators</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Bitwise operators</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <a style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#If-Else-collapse" aria-expanded="false">
+              If-Else
+            </a>
+            <div class="collapse show" id="If-Else-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;If-Else</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Nested If-Else</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Else If</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Switch Case</a></li>
+          <li class="mb-1">
+            <a style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#Loops-collapse" aria-expanded="false">
+              Loops
+            </a>
+            <div class="collapse show" id="Loops-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp; For Loop</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;While Loop</a></li>
+                <li><a href="#" style="height: 30px;width: 250px;text-align: left;padding-bottom: 26px;font-size: 16.5px;" class="btn btn-close-white rounded">&nbsp;&nbsp;&nbsp;&nbsp;Do-While Loop</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Break and Continue</a></li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Arrays</a></li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Strings</a></li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">User Input</a></li>
+          <li><a href="#" style="height: 35px;width: 250px;text-align: left;padding-bottom: 28px;font-size: 18.5px;" class="btn btn-close-white rounded">Pointers</a></li>
+        </ul>
+        </div>
+        </li>
+    
+        </ul>
+      </div>
+    </div>
+    <div class="col-5" style="margin-left: 15%;margin-top: 10px;">
+        <h1 id="JTD">Just Tap on Your Desired Code</h1>
+            <table id="tbl" class="table table-light ">
+            <br>
+            <tr id="tbl-th">
+                <th id="tbl-th">
+                    Sr. No.
+                </th>
+                <th id="tbl-th">
+                    Code
+                </th>
+            </tr>
+            <tr id="tbl-th">
+                <td  id="tbl-th">
+                    1.
+                </td >
+                <td id="tbl-th">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="hcf()" id="tbl-th">HCF</a>
+                </td>
+            </tr>
+            <tr id="tbl-th">
+                <td  id="tbl-th">
+                    2.
+                </td >
+                <td id="tbl-th">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="value_swap()" id="tbl-th">Value Swap</a>
+                </td>
+            </tr>
+            <tr id="tbl-th">
+                <td  id="tbl-th">
+                    3.
+                </td >
+                <td id="tbl-th">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="reverse()" id="tbl-th">Reverse a Number</a>
+                </td>
+            </tr>
+            <tr id="tbl-th">
+                <td  id="tbl-th">
+                    4.
+                </td >
+                <td id="tbl-th">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="vowel_consonent_detector()" id="tbl-th">Vowel Consonent Detector</a>
+                </td>
+            </tr>
+            <tr id="tbl-th">
+                <td  id="tbl-th">
+                    5.
+                </td >
+                <td id="tbl-th">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="prime_number()" id="tbl-th">Prime Number</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+<div class="col-5" style="margin-top: 10px;">
+                    <form name="form">
+                        <h1 id="GCH">Get Your Code Here :</h1>
+                        <br>
+						<div class="container bd" id="box">
+              <div class="row">
+                <div class="col-9"><textarea class="form-control" name="b" id="codearea" id="my-textarea" ></textarea></div>
+                <div class="col-3">	<button onclick="copyText()" class="btn btn-outline-dark" id="cpy">Copy</button></div>
+              </div>
+              </div>
+                    </form>
+            </div>
+  </div>
+  <div style="overflow-y: scroll;height: 683px;"><div class="col-11" style="color: aliceblue;padding-left: 22%;padding-top: 2.5%;">
+    <p style="font-size: 65px;font-weight: 100;text-align: center;"><ins><b>C Intro</b></ins></p><hr>
+    <h1>What is C?</h1>
+    <p style="font-size: 19px;">C is a popular general-purpose programming language that was developed in the 1970s by Dennis Ritchie at Bell Labs. It has become one of the most widely used programming languages due to its flexibility, efficiency, and low-level system access.</p>
+    <p style="font-size: 19px;">C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+    <hr>
+    
+    <h1>Why Learn C?</h1>
+    <ul>
+    <li style="font-size: 19px;">It is one of the most popular programming language in the world</li>
+    <br>
+      <li style="font-size: 19px;">If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar.</li>
+      <br><!--<li>If you know C, you will understand how computer memory works</li>-->
+      <li style="font-size: 19px;">C is very fast, compared to other programming languages, like Java and Python.</li>
+      <br><li style="font-size: 19px;">C is very versatile; it can be used in both applications and technologies.</li>
+      <br><li style="font-size: 19px;">
+        One of the main reasons why C is popular is because it can be used to write software for a wide range of applications, including operating systems, device drivers, embedded systems, and other low-level software.
+        </li><br>
+        <li style="font-size: 19px;">C is also known for its performance and efficiency. The language allows programmers to control memory allocation and access, making it possible to write code that is optimized for speed and resource usage.
+
+        </li><br>
+        <li style="font-size: 19px;">Another advantage of C is its portability. Programs written in C can be compiled and run on a wide range of hardware and operating systems, making it a popular choice for cross-platform development.</li>
+    </ul>
+    <hr>
+    
+    <h1>Difference between C and C++</h1>
+    <ul>
+    <li style="font-size: 19px;">C++ was developed as an extension of C, and both languages have almost the same syntax.</li>
+    <br><li style="font-size: 19px;">The main difference between C and C++ is that C++ support object-oriented programming, while C does not.</li>
+    </ul><br><br>
+    <div class="center_align"><a href="Mingw_setup.html"><button type="button" class="btn1">Next  >></button></a></div>
+    <br><br>
+</div></div>
+  
+    <script>
+        function hcf(){
+            form.b.value =`#include<stdio.h>\nint main()\n{\n   int num1,num2,hcf;\n   scanf("%d",&num1);\n   scanf("%d",&num2);\n   int min = (num1<num2)?num1:num2;\n   for(int i = 1; i <= min; i++){\n      if(num1%i==0 && num2%i==0){\n         hcf=i;\n      }\n   }\n   printf("HCF of %d and %d is %d",num1,num2,hcf);\n   return 0;\n}`;    
+        }
+        function value_swap(){
+          form.b.value = `#include <stdio.h>\nint swap(){\n    int a,b,t,c;\n    a=2;\n    b=3;\n    c=4;\n    printf("%d %d %d`+"\\n"+`",a,b,c);\n    t=a;\n    a=b;\n    b=c;\n    c=t;\n    prinf("%d %d %d",a,b,c);\n}\nint main()\n{\n    swap();\n    return 0;\n}\n`
+        }
+        function reverse(){
+          form.b.value = `#include<stdio.h>\nint main()\n{\n    int num,rev = 0;\n    printf("Enter a number`+"\\n"+`");\n    scanf("%d",&num);\n    while(num != 0)\n    {\n        rev = rev * 10;\n        rev = rev + num % 10;\n        num = num/10;\n    }\n    printf("The reverse is %d",rev);\n    return 0;\n}\n`
+        }
+        function vowel_consonent_detector(){
+          form.b.value = `#include<stdio.h>\nint main()\n{\n    char ch;\n    printf("Enter an alphabet\n");\n    scanf("%c",&ch);\n    switch(ch)\n    {\n        case 'a':\n            printf("You have entered a vowel");\n            break;\n        case 'e':\n            printf("You have entered a vowel");\n            break;\n        case 'i':\n            printf("You have entered a vowel");\n            break;\n        case 'o':\n            printf("You have entered a vowel");\n            break; \n        case 'u':\n            printf("You have entered a vowel");\n            break; \n         case 'A':\n            printf("You have entered a vowel");\n            break;\n        case 'E':\n            printf("You have entered a vowel");\n            break;\n        case 'I':\n            printf("You have entered a vowel");\n            break;\n        case 'O':\n            printf("You have entered a vowel");\n            break; \n        case 'U':\n            printf("You have entered a vowel");\n            break;   \n        default:\n            printf("You have entered a consonent");\n            break;\n    }\n    return 0;\n}\n`
+        }
+        function prime_number(){
+          form.b.value = `#include<stdio.h>\nint prime(int n){\n    int num;\n    if (n == 0 || n ==1 || n==2 || n==3){\n        return 0;\n    }\n    for (int i = 2; i <=n/2 ; i++){\n        if (n % i == 0){\n            return 1;\n            break;\n        }\n    }\n}\nint main(){\n    int n;\n    scanf("%d", &n);\n    if (prime(n)==1){\n        printf("The number is Composite");\n    }\n    else{\n        printf("The number is Prime");\n    }\n}\n`
+        }
+        function toggleDarkMode() {
+      const body = document.querySelector('body');
+      body.classList.toggle('dark-mode');
+    }
+	function copyText() {
+  const textarea = document.getElementById('codearea');
+  textarea.select();
+  document.execCommand('copy');
+  alert('Copied to clipboard!');
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href=""type="audio/x-icon"/>
+    <link rel="Stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="codeBox.html">
+    <style>
+        body{
+          background-color: #2c2c2c;
+    
+            overflow-x: hidden;
+        }
+        .nav1{
+          position: static;
+          top: 0%;
+        }
+        .btn1{background-color: #FFC0C7;
+          border-radius: 50px;
+          border: #FFC0C7;
+          height: 50px;
+          width: 400px;
+          font-weight: 500;
+          font-size: 30px;
+          color: #1a1919;
+          }
+          .center_align{
+            text-align: center;
+          }
+          .scrollbar{
+            width: 280px;
+            height: 820px ;
+            overflow-y:scroll;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+          }
+
+
+      .bd{
+        background-color: #333; 
+        color: #fff;
+         padding: 10px;
+          border: 3px solid #1c1c1c;
+           border-radius: 14px;
+            width: min-content;
+             min-height: max-content;
+            font-size: 30px; color: rgb(255, 255, 255); 
+            align-items: center;
+
+      }
+      .sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: auto;
+      }
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+    </style>
+  </head>
+  <body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="rounded float-star" src="Type of Duck Skins\logo.png" class="img-fluid" alt="..." width="35px" height="35px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index_Home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  General
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" area-expanded="false">
+                  Tutorials
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exercise
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item",style="text-align:right">
+                <!-- <button class="btn btn-outline-dark"> -->
+                <a class="btn btn-outline-dark" href="Blackbox2.html">Code Generator</a>
+                <a class="btn btn-outline-dark" href="About_us.html">About Us</a>
+                <a class="btn btn-outline-dark" href="#">Learn C language</a>
+                <!-- </button> -->
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled">Disabled</a> -->
+            </li>
+        </ul><div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="forms.html" class="btn btn-dark " tabindex="-1" role="button" >Sign In</a>
+        </div>
+        <form class="d-flex" role="search">
+            
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="col-12;center_align ; align-content-center"  >
+
+  
+  <h1 style="font-weight:100;font-size: 55px; padding-top: 2%;padding-left: 3%;color: #ffffff;">About Us</h1><br>
+ 
+  <div class="about-section">
+    <h1 style="color: #ffffff;">Welcome to our C language project!</h1>
+    
+
+     <p> <li> At CapStone Project, we're passionate about C programming. Our team creates innovative and efficient solutions, pushing the boundaries of what's possible with C. We foster collaboration, embrace challenges, and deliver high-quality code. Join us as we explore the endless potential of C programming..</li></p>
+    
+  </div>
+  <h1 style="text-align:center ; color: #ffffff ;font-size: 55px; font-family: fantasy; ">Our Team:</h1>
+  <div class="container">
+<div class="row">
+  <div class=" col-md-6">
+    <div class="card mb-6" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="F:\Prsnl_Code\Duck\Type of Duck Skins\Ya.jpg" class="img-fluid rounded-start" alt="Yasvi img">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Yashvi Shah</h5>
+            <p class="title">Group Leader</p>
+            <p class="card-header">Name: Yashvi Shah</p>
+            <p class="card-header">Er No: 69 </p>
+            <p class="card-header">Seat No: 20067 </p>
+            <p class="card-header">Contact: yashvi310305@gmail.com</p>
+            <p class="card-body"> <h5> Work: </h5>Created Code Generator, Optimization of work done by rest team member, Work on color scheme of web-site</p>
+            <p class="card-text"><small class="text-muted">
+Code name: DJ-69 
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <div class=" col-md-6">
+    <div class="card mb-6" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="F:\Prsnl_Code\Duck\Type of Duck Skins\IMG_20221130_130950.jpg" class="img-fluid rounded-start" alt="Dikshant img">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Dikshant Bhatti</h5>
+            <p class="title">Group member</p>
+            <p class="card-header">Name: Dikshant Bhatti</p>
+            <p class="card-header">Er No: 10 </p>
+            <p class="card-header">Seat No: 20007 </p>
+            <p class="card-header">Contact: bhattidikshant@gmail.com</p>
+            <p class="card-body"> <h5> Work: </h5> Created Web pages on information on topic , prepare Video of topics , Created Audio files for Topics</p>
+            <p class="card-text"><small class="text-muted">
+Code name: Pegasus 
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class=" col-md-6">
+    <div class="card mb-6" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="F:\Prsnl_Code\Duck\Type of Duck Skins\IMG_20221130_090405 (1).jpg" class="img-fluid rounded-start" alt="Waman img">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Waman Vyas</h5>
+            <p class="title">Group member</p>
+            <p class="card-header">Name: Waman Vyas </p>
+            <p class="card-header">Er No: 85 </p>
+            <p class="card-header">Seat No: 20083 </p>
+            <p class="card-header">Contact: pgvyas18@gmail.com</p>
+            <p class="card-body"> <h5> Work: </h5> Created Web pages on information on topic , prepare Video of topics , Created Audio files for Topics</p>
+            <p class="card-text"><small class="text-muted">
+Code name: khilkhilat
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class=" col-md-6">
+    <div class="card mb-6" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="F:\Prsnl_Code\Duck\Type of Duck Skins\sahil.jpeg" class="img-fluid rounded-start" alt="Sahil img">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Sahil Soni</h5>
+            <p class="title">Group member</p>
+            <p class="card-header">Name: Sahil Soni </p>
+            <p class="card-header">Er No: 075 </p>
+            <p class="card-header">Seat No: 20073 </p>
+            <p class="card-header">Contact: sahilsoni1030@gmail.com</p>
+            <p class="card-body"> <h5> Work: </h5> Created Dark mode using Css and javaScript , Created login page and copy button , assist in rest of the work</p>
+            <p class="card-text"><small class="text-muted">
+Code name: ZendaCross
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <div class=" col-md-6">
+    <div class="card mb-6" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="F:\Prsnl_Code\Duck\Type of Duck Skins\zaara.jpeg" class="img-fluid rounded-start" alt="Zaara img">
+        </div>
+        <div class="col-md-6" style="align-content: center;">
+          <div class="card-body">
+            <h5 class="card-title">Zaara Shaikh</h5>
+            <p class="title">Group member</p>
+            <p class="card-header">Name: Zarra Shaikh </p>
+            <p class="card-header">Er No: 70 </p>
+            <p class="card-header">Seat No: 20068 </p>
+            <p class="card-header">Contact: zaarashaikh802@gmail.com</p>
+            <p class="card-body"> <h5> Work: </h5> Created Web pages on information , handel the css and looks of the website , created copy button , major-minor post production improvements  </p>
+            <p class="card-text"><small class="text-muted">
+Code name: Pathan
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

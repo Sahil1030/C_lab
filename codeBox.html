@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bd{
+        background-color: #333; 
+        color: #fff;
+         padding: 10px;
+          border: 3px solid #1c1c1c;
+           border-radius: 14px;
+            width: min-content;
+             min-height: max-content;
+            font-size: 30px; color: rgb(255, 255, 255); 
+            align-items: center;
+
+      }
+    </style>
+</head>
+<body>  <h1>This Duck</h1>
+    
+    
+  <div class="container bd" > <div class="row-start-2">
+  <button onclick="copyCode()"  >Copy Code</button>
+  <pre id="code-block" >
+    #include &lt;stdio.h&gt;
+      int main(){
+       printf("Hello duck");
+       return 0;
+      }
+  </pre>
+</div>
+</div>
+<script>
+  function copyCode() {
+    var codeBlock = document.getElementById("code-block");
+    navigator.clipboard.writeText(codeBlock.textContent);
+    alert("Code copied to clipboard!");
+  }
+</script>
+</body>
+</html>
